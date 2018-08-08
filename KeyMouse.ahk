@@ -27,19 +27,19 @@ Rate := 0
 *L::
 *J::
 *`;::
-	Loop {
+    Loop {
         X := Y := 0
         Rate := Min(25, Rate + 1)
         if GetKeyState("K", "P")
-			Y -= Rate ; Up
-		if GetKeyState("L", "P")
-			Y += Rate ; Down
-		if GetKeyState("J", "P")
-			X -= Rate ; Left
-		if GetKeyState(";", "P")
-			X += Rate ; Right
+            Y -= Rate ; Up
+        if GetKeyState("L", "P")
+            Y += Rate ; Down
+        if GetKeyState("J", "P")
+            X -= Rate ; Left
+        if GetKeyState(";", "P")
+            X += Rate ; Right
         MouseMove, X, Y, 0, R
-	} Until !X and !Y
+    } Until !X and !Y
     Rate := 0
     return
 
