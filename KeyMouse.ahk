@@ -8,11 +8,9 @@ SetWorkingDir %A_ScriptDir%
 #InstallKeybdHook
 
 ;Init
-
 #If, GetKeyState("CapsLock", "T")
 
 ;Mouse Click Support
-
 *Space::
     Click, Left
     return
@@ -24,7 +22,6 @@ SetWorkingDir %A_ScriptDir%
     return
 
 ;Mouse Move Support
-
 Rate := 0
 *K::
 *L::
@@ -47,7 +44,6 @@ Rate := 0
     return
 
 ;Mouse Wheel Support
-
 *D::
     Click, WheelUp
     return
@@ -59,4 +55,4 @@ Rate := 0
     return
 *F::
     Click, WheelRight
-	return
+    return
