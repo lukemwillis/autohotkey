@@ -11,15 +11,9 @@ SetWorkingDir %A_ScriptDir%
 #If, GetKeyState("CapsLock", "T")
 
 ;Mouse Click Support
-*Space::
-    Click, Left
-    return
-*RCtrl::
-    Click, Right
-    return
-*RAlt::
-    Click, Middle
-    return
+*Space::Click, Left
+*RCtrl::Click, Right
+*RAlt::Click, Middle
 
 ;Mouse Move Support
 Rate := 0
@@ -44,15 +38,7 @@ Rate := 0
     return
 
 ;Mouse Wheel Support
-*D::
-    Click, WheelUp
-    return
-*S::
-    Click, WheelDown
-    return
-*A::
-    Click, WheelLeft
-    return
-*F::
-    Click, WheelRight
-    return
+*D::Click, WheelUp
+*S::Click, WheelDown
+*A::Click, WheelLeft
+*F::Click, WheelRight
